@@ -31,4 +31,20 @@ public class Operaciones {
     public static double multiplicar(double num1, double num2) {
         return num1 * num2;
     }
+    /**
+     * Operacion de division de dos numeros
+     *
+     * @param num1 Primer numero a dividir
+     * @param num2 Seguno numero a dividir
+     * @return Devuelve el resultado
+     */
+    public static double dividir(double num1, double num2) {
+        if (num2 != 0) {
+            return num1 / num2;
+        } else {
+            System.out.println("No es posible dividir por 0. El resultado sera 0");
+            return 0;
+        }
+    }
+}
 }
